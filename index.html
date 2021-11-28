@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tool-bar">
+        <div class="tool">
+            <img src="images/Black_Pencil.svg" alt="" id="pencil" class="tool-image">
+        </div>
+        <div class="tool">
+            <img src="images/Eraser.svg" alt="" id="eraser" class="tool-image">
+        </div>
+        <div class="tool">
+            <img src="images/StickyNote.svg" alt="" id="stickyPad" class="tool-image">
+        </div>
+        <div class="tool">
+            <img src="images/Undo.svg" alt="" id="undo" class="tool-image">
+        </div>
+        <div class="tool">
+            <img src="images/Redo.svg" alt="" id="redo" class="tool-image">
+        </div>
+        <div class="tool">
+            <img src="images/Download.svg" alt="" id="download" class="tool-image">
+        </div>
+        <div class="tool">
+            <label for="input">
+            <img src="images/Photo.svg" alt="" id="upload" class="tool-image">
+            </label>
+            <input type="file" id="input">
+        </div>
+    </div>
+    
+    <canvas></canvas>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+    <script>
+    const socket = io.connect("http://localhost:3000");
+    </script>
+</body>
+</html>

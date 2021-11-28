@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+
+.tool-bar{
+    margin: 10px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+   
+}
+.tool{
+    height: 90%;
+   
+}
+
+#pencil,#eraser,#stickyPad,#undo,#redo,#download,#upload{
+    height: 100%;
+}
+
+.stickypad{
+    position: absolute;
+    height: 10rem;
+    width: 6rem;
+    left: 40vw;
+    top: 35vh;
+    /* box-shadow: 5px 5px lightgray; */
+    /* background-color: brown; */
+}
+.nav-bar{
+    height: 20%;
+    background-color: aquamarine;
+    box-shadow: 8px 10px lightgray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.close,.minimize{
+    height: 80%;
+    border-radius: 50%;
+    width: 10%;
+    background-color: red;
+    margin-right: 5px;
+}
+.minimize{
+   background-color: lightgreen;
+}
+.text-area{
+    height: 80%;
+    width: 98%;
+   
+    box-shadow: 10px 10px lightgray;
+
+}
+
+textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    
+}
+.tool>input {
+    display: none;
+  }
